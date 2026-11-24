@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import daily30 from './daily-30.png';
 
 export default function ImageTestPage() {
   return (
@@ -37,6 +38,30 @@ export default function ImageTestPage() {
             quality={75}
             style={{ borderRadius: '8px' }}
           />
+        </div>
+      </section>
+
+      <section style={{ marginTop: '2rem' }}>
+        <h2>Local Images</h2>
+        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+          <div>
+            <h3>Public Path</h3>
+            <Image
+              src="/image-test/codex-start.png"
+              alt="Codex start screen"
+              width={408}
+              height={167}
+              style={{ borderRadius: '8px', maxWidth: '100%', height: 'auto' }}
+            />
+          </div>
+          <div>
+            <h3>Static Import</h3>
+            <Image
+              src={daily30}
+              alt="Daily 30 playlist cover"
+              style={{ borderRadius: '8px', maxWidth: '100%', height: 'auto' }}
+            />
+          </div>
         </div>
       </section>
     </main>
