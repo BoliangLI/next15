@@ -1,5 +1,5 @@
 {
-  "name": "next15-pnpm",
+  "name": "pcg-next15-pnpm-esm",
   "description": "React 前端、边缘函数和 Express 后端示例",
   "skipFunctionBuild": false,
   "regionFunction": {
