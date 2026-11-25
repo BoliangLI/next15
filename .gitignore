@@ -1,0 +1,65 @@
+logs/
+npm-debug.log
+yarn-error.log
+node_modules/
+coverage/
+dist/
+.idea/
+run/
+.DS_Store
+*.sw*
+*.un~
+.tsbuildinfo
+.tsbuildinfo.*
+.node
+antx.properties
+
+# Local-only registry config (team chooses to not track .npmrc)
+.npmrc
+
+# Local environment overrides — holds secrets (e.g. MSE AK/SK).
+# `.env.example` IS committed as a template; the real `.env*` files are not.
+.env
+.env.*
+!.env.example
+
+
+# Build artifacts (Next.js / OpenNext / pcg-cli local deploy)
+.next/
+.open-next/
+.pcg/
+.pcg-local/
+.package/
+.build-dest/
+
+# Tool caches
+.cache/
+.pnpm-store/
+.qoder/
+.rewind_webfetch/
+.kiro/
+.memory_split_v1.done
+
+# Backup files
+*.bak
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+
+# tsc output paired with .tsx / .ts in examples / e2e (never authored by hand)
+e2e/**/*.js
+e2e/**/*.d.ts
+examples/**/app/**/*.js
+examples/**/app/**/*.d.ts
+examples/**/open-next.config.js
+examples/**/open-next.config.d.ts
+examples/**/next.config.js
+examples/**/next.config.d.ts
+
+# pcg build auto-generates open-next.config.ts inside the project root
+# (and cleans it up in `finally`). Never commit any of these auto-gen files.
+examples/**/open-next.config.ts
+
+.qoder/*

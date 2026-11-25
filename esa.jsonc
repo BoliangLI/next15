@@ -1,0 +1,14 @@
+{
+  "name": "next15-pnpm",
+  "description": "React 前端、边缘函数和 Express 后端示例",
+  "skipFunctionBuild": false,
+  "regionFunction": {
+    "runtime": "nodejs22",
+    "instanceType": "2C4G",
+    "minInstances": 1,
+    "concurrency": 10,
+    "timeout": 600,
+    "idleTimeout": 600
+  },
+  "installCommand": "pnpm install --frozen-lockfile"
+}
